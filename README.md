@@ -9,10 +9,19 @@ All done with no web APIs, only URLScheme.
 
 ## Enter group flow
 
-1. User A who is already on a group taps on share button
-2. User A sends group link (setup with URLScheme) copied to clipboard to new User B
+1. User A who is already on a group taps on share button, copying invite link to the clipboard.
+2. User A sends invite link to User B. (On the simulator, simply open safari, paste & open the link).
 3. User B opens link, which leads to the App.
-4. User B enters his name and voilá! He enters the group.
+4. User B enters his name and voilá! He is now part of the group.
+
+## Making it work for real
+
+One way to make this work in a real App:
+
+- [ ] Replace the mocked groups with groups that are stored in a remote database, which you access through some kind of API (CloudKit, Firebase, REST api hosted somewhere...).
+- [ ] Create an invite link with a group ID that is stored on a group from the remote database.
+- [ ] The `handle(url:)` function on `GroupListViewModel` should access this remote database and add the new member/user to it.
+- [ ] The user should probably be a model, not a String.
 
 ## Disclaimer
 
