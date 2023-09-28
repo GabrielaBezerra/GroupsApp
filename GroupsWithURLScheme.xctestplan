@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "B88A11DE-5796-4FA6-91BA-5A820379A028",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GroupsWithURLScheme.xcodeproj",
+      "identifier" : "430ADB102AC4C2D6008D3CA9",
+      "name" : "GroupsWithURLScheme"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:GroupsWithURLScheme.xcodeproj",
+        "identifier" : "430ADB202AC4C2D8008D3CA9",
+        "name" : "GroupsWithURLSchemeTests"
+      }
+    }
+  ],
+  "version" : 1
+}
